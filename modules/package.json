@@ -1,0 +1,23 @@
+{
+  "name": "lincoln-official",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robifis/Lincoln-official.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robifis/Lincoln-official/issues"
+  },
+  "homepage": "https://github.com/robifis/Lincoln-official#readme",
+  "dependencies": {
+    "flickity": "^2.2.0",
+    "slug": "^1.1.0"
+  }
+}
