@@ -1,13 +1,6 @@
-var gulp = require('gulp');
-var uglifycss = require('gulp-uglifycss');
+let gulp = require('gulp');
+let cleanCSS = require('gulp-clean-css');
 
-gulp.task('css', function () {
-  gulp
-    .src('css/*.css')
-    .pipe(
-      uglifycss({
-        uglyComments : true,
-      }),
-    )
-    .pipe(gulp.dest('./dist/'));
+gulp.task('minify-css', () => {
+  return gulp.src('css/*.css').pipe(cleanCSS({ compatibility: 'ie8' })).pipe(gulp.dest('dist'));
 });
